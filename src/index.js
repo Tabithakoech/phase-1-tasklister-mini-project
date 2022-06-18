@@ -17,4 +17,9 @@ function todo(){
   newTodo=${input.value};
   document.getElementById("tasks").appendChild(newTodo);
 
+
+  deleteBtn.textContent = "DONE";
+  newTask.appendChild(deleteBtn);
+  deleteBtn.addEventListener('click', () => newTodo.remove());
+
 }
