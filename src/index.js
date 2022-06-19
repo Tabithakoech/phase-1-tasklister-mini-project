@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+  
 
   const submit= document.querySelector("#form");
 
@@ -19,7 +19,7 @@ function todo(){
 
 
   deleteBtn.textContent = "DONE";
-  newTask.appendChild(deleteBtn);
+  newTodo.appendChild(deleteBtn);
   deleteBtn.addEventListener('click', () => newTodo.remove());
 
 }
